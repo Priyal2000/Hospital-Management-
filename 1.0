@@ -1,0 +1,177 @@
+def menu():
+    print("Are you:")
+    print("1. Patient")
+    print("2. Doctor")
+    print("3. Staff")
+    print("Enter your choice: ")
+    ch = int(input())
+    if ch==1:
+        pat()
+    elif ch==2:
+        doc()
+    elif ch==3:
+        sta()
+    else:
+        print("Invalid Input")
+        menu()
+
+def pat():
+    print("Are you:")
+    print("1. New User")
+    print("2. Existing User")
+    print("Enter you choice: ")
+    ch = int(input())
+    if ch==1:
+        Nu()
+    elif ch==2:
+        Exu()
+    else:
+        print("Invalid Input")
+        pat()
+
+def Nu():
+    print("Enter your details:")
+    print("1. Email")
+    email = input()
+    print("2. Password")
+    email = input()
+    print("3. Name")
+    name = input()
+    print("4. Age")
+    age = int(input())
+    print("5. Blood Group")
+    bg = input()
+    print("6. Contact Number")
+    cn = input()
+    li = [[email,name,age,bg,cn]]
+    cols = ['Email','Name','Age','Blood Group','Contact Number']
+    Patient = pd.DataFrame(li,columns = cols)
+    Patient.to_csv('Patient.csv')
+def gdoc()
+    print("Select the function to perform")
+    print("1.Check the appointments")
+    print("2.Cancel the appointments")
+    print("3.Prescription")
+    print("Enter your choice")
+    ch = int(input())
+    if ch==1:
+        checkapp(1)
+    elif ch==2:
+        cancelapp(1)
+    elif ch==3:
+        pers(1)
+    else:
+        print("Invalid Input") 
+        gdoc()
+def ndoc()
+    print("Select the function to perform")
+    print("1.Check the appointments")
+    print("2.Cancel the appointments")
+    print("3.Prescription")
+    print("Enter your choice")
+    ch = int(input())
+    if ch==1:
+        checkapp(2)
+    elif ch==2:
+        cancelapp(2)
+    elif ch==3:
+        pers(2)
+    else:
+        print("Invalid Input") 
+        ndoc()
+def opdoc()
+    print("Select the function to perform")
+    print("1.Check the appointments")
+    print("2.Cancel the appointments")
+    print("3.Prescription")
+    print("Enter your choice")
+    ch = int(input())
+    if ch==1:
+        checkapp(3)      
+    elif ch==2:
+        cancelapp(3)
+    elif ch==3:
+        pers(3)
+    else:
+        print("Invalid Input") 
+        opdoc()
+def gndoc()
+    print("Select the function to perform")
+    print("1.Check the appointments")
+    print("2.Cancel the appointments")
+    print("3.Prescription")
+    print("Enter your choice")
+    ch = int(input())
+    if ch==1:
+        checkapp(4)
+    elif ch==2:
+        cancelapp(4)
+    elif ch==3:
+        pers(4)
+    else:
+        print("Invalid Input") 
+        gndoc()
+def Exu():
+    print("Enter your email")
+    email=input()
+    print("Enter your password")
+    pas=input()
+    if(pas!=):
+    else:
+        print("Which doctor would you like to consult?")
+        print("1.Gastrointestinal")
+        print("2.Neourologist")
+        print("3.Opthamologist")
+        print("4.General physician")
+        print("Enter your choice")
+        ch = int(input())
+        if ch==1:
+            gdoc()
+        elif ch==2:
+            ndoc()
+        elif ch==3:
+            opdoc()
+        elif ch==4:
+            gndoc()
+        else:
+            print("Invalid Input")
+    staff(ch)
+def staff(ch):
+    if ch==1:
+        gmakeapp()
+    elif ch==2:
+        nmakeapp()
+    elif ch==3:
+        opmakeapp()
+    elif ch==4:
+        gnmakeapp()
+def checkapp(ch):
+    if ch==1:
+        
+    elif ch==2:
+        
+    elif ch==3:
+        
+    elif ch==4:
+        
+def cancelapp(ch):
+    if ch==1:
+        Patients.read_csv("Patients.csv")
+    elif ch==2:
+        Patients.read_csv("Patients.csv")
+    elif ch==3:
+        Patients.read_csv("Patients.csv")
+    elif ch==4:
+        Patients.read_csv("Patients.csv")  
+    
+def pers(ch):
+    if ch==1:
+        print("Prescription for type 1 patient")
+    elif ch==2:
+        print("Prescription for type 2 patient")
+    elif ch==3:
+        print("Prescription for type 3 patient")
+    elif ch==4:
+        print("Prescription for type 4 patient")
+    else:
+        print("No prescription available")
